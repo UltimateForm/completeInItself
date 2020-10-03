@@ -33,8 +33,6 @@ export function Container() {
 		const winScroll =
 			document.body.scrollTop || document.documentElement.scrollTop;
 
-		console.log(winScroll / document.documentElement.clientHeight);
-
 		setPageOffset(winScroll / document.documentElement.clientHeight);
 	};
 
@@ -51,14 +49,13 @@ export function Container() {
 						height: "100vh",
 						position: "sticky",
 						top: 0,
-						minWidth:"30%",
+						minWidth: "30%",
 						marginLeft: `-${clamp(pageOffset * 100, 0, 30)}%`,
 					}}
 					className="composition"
 				></div>
 				<ComissionInfo />
 				<Gallery />
-
 			</div>
 		</div>
 	);
