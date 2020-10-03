@@ -1,8 +1,7 @@
-import { url } from "inspector";
 import React from "react";
 import { ComissionInfo } from "./ComissionInfo";
 import { Gallery } from "./Gallery";
-import ScrollAnimation from "react-animate-on-scroll";
+import { isMobile } from "react-device-detect";
 
 const styles: { [key: string]: React.CSSProperties } = {
 	container: {
@@ -12,7 +11,7 @@ const styles: { [key: string]: React.CSSProperties } = {
 	},
 	grid: {
 		display: "flex",
-		flexDirection: "row",
+		flexDirection: isMobile? "column" : "row",
 		height: "100%",
 		width: "100%",
 		boxSizing: "border-box",
@@ -32,7 +31,6 @@ export function Container() {
 	const listenToScroll = () => {
 		const winScroll =
 			document.body.scrollTop || document.documentElement.scrollTop;
-
 		setPageOffset(winScroll / document.documentElement.clientHeight);
 	};
 
@@ -44,16 +42,20 @@ export function Container() {
 	return (
 		<div style={styles.container}>
 			<div style={styles.grid}>
-				<div
-					style={{
-						height: "100vh",
-						position: "sticky",
-						top: 0,
-						minWidth: "30%",
-						marginLeft: `-${clamp(pageOffset * 100, 0, 30)}%`,
-					}}
-					className="composition"
-				></div>
+				{!isMobile && (
+					<>
+					<div
+						style={{
+							height: "100vh",
+							position: "sticky",
+							top: 0,
+							minWidth: "30%",
+							marginLeft: `-${clamp(pageOffset * 100, 0, 30)}%`,
+						}}
+						className="composition"
+					></div>
+					</>
+				)}
 				<ComissionInfo />
 				<Gallery />
 			</div>

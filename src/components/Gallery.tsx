@@ -1,4 +1,5 @@
 import React from "react";
+import { isMobile } from "react-device-detect";
 import * as Artwork from "../images/artwork";
 
 const styles: { [key: string]: React.CSSProperties } = {
@@ -10,13 +11,9 @@ const styles: { [key: string]: React.CSSProperties } = {
 	gallery:{
 		width: "-webkit-fill-available",
 		display: "inline-grid",
-		maxWidth: "50%",
+		maxWidth: isMobile? "100%":"50%",
 		justifyItems: "center",
-		padding: "1rem 5rem 1rem 5rem"
-	},
-	header: {
-		fontWeight: 500,
-		height:"30%"
+		padding: isMobile? "1rem" : "1rem 5rem 1rem 5rem"
 	}
 };
 

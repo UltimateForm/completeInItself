@@ -1,4 +1,5 @@
 import React from "react";
+import { isMobile } from "react-device-detect";
 
 
 //TODO: clean this lol
@@ -7,12 +8,13 @@ const styles: { [key: string]: React.CSSProperties } = {
 		display: "flex",
 		flexDirection: "column",
 		textAlign: "start",
-		height: "100vh",
-		position: "sticky",
+		height: isMobile? "unset" : "100vh",
+		position: isMobile? "relative" : "sticky",
 		top: 5,
 		minWidth: "35%",
 		marginLeft: "1rem",
 		marginRight: "1rem",
+		marginBottom: isMobile? "1rem" : "unset"
 	},
 	h1: {
 		fontWeight: 500,
@@ -114,7 +116,7 @@ export function ComissionInfo() {
 				</ul>
 				<span style={styles.note}>*Depending on complexity</span>
 			</div>
-			<span>If neeeded, PRINTING+SHIPING costs additional $10</span>
+			<span>If needed, PRINTING+SHIPING costs additional $10</span>
 			<div style={styles.minorSection}>
 				<h3 style={styles.sectionHeader}>How to order?</h3>
 				<ul style={styles.ul}>
