@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/completeInItself/static/css/main.d6270af6.chunk.css",
+    "main.css": "/completeInItself/static/css/main.d725777a.chunk.css",
     "main.js": "/completeInItself/static/js/main.b10d2618.chunk.js",
     "main.js.map": "/completeInItself/static/js/main.b10d2618.chunk.js.map",
     "runtime-main.js": "/completeInItself/static/js/runtime-main.cb65224f.js",
@@ -8,9 +8,9 @@
     "static/js/2.d7c8ff85.chunk.js": "/completeInItself/static/js/2.d7c8ff85.chunk.js",
     "static/js/2.d7c8ff85.chunk.js.map": "/completeInItself/static/js/2.d7c8ff85.chunk.js.map",
     "index.html": "/completeInItself/index.html",
-    "precache-manifest.303a8fd1d2b5e55e0c7d1f90a9bcd585.js": "/completeInItself/precache-manifest.303a8fd1d2b5e55e0c7d1f90a9bcd585.js",
+    "precache-manifest.26d0400e793dd2185e074a56b1e7b889.js": "/completeInItself/precache-manifest.26d0400e793dd2185e074a56b1e7b889.js",
     "service-worker.js": "/completeInItself/service-worker.js",
-    "static/css/main.d6270af6.chunk.css.map": "/completeInItself/static/css/main.d6270af6.chunk.css.map",
+    "static/css/main.d725777a.chunk.css.map": "/completeInItself/static/css/main.d725777a.chunk.css.map",
     "static/js/2.d7c8ff85.chunk.js.LICENSE.txt": "/completeInItself/static/js/2.d7c8ff85.chunk.js.LICENSE.txt",
     "static/media/1 riley.jpg": "/completeInItself/static/media/1 riley.1d7c2c9d.jpg",
     "static/media/10 angels egg.jpg": "/completeInItself/static/media/10 angels egg.28f822ad.jpg",
@@ -30,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.cb65224f.js",
     "static/js/2.d7c8ff85.chunk.js",
-    "static/css/main.d6270af6.chunk.css",
+    "static/css/main.d725777a.chunk.css",
     "static/js/main.b10d2618.chunk.js"
   ]
 }
