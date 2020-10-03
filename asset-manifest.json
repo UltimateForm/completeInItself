@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/completeInItself/static/css/main.d725777a.chunk.css",
-    "main.js": "/completeInItself/static/js/main.b10d2618.chunk.js",
-    "main.js.map": "/completeInItself/static/js/main.b10d2618.chunk.js.map",
+    "main.css": "/completeInItself/static/css/main.2b585cf0.chunk.css",
+    "main.js": "/completeInItself/static/js/main.7cc976b3.chunk.js",
+    "main.js.map": "/completeInItself/static/js/main.7cc976b3.chunk.js.map",
     "runtime-main.js": "/completeInItself/static/js/runtime-main.cb65224f.js",
     "runtime-main.js.map": "/completeInItself/static/js/runtime-main.cb65224f.js.map",
-    "static/js/2.d7c8ff85.chunk.js": "/completeInItself/static/js/2.d7c8ff85.chunk.js",
-    "static/js/2.d7c8ff85.chunk.js.map": "/completeInItself/static/js/2.d7c8ff85.chunk.js.map",
+    "static/js/2.6346f83c.chunk.js": "/completeInItself/static/js/2.6346f83c.chunk.js",
+    "static/js/2.6346f83c.chunk.js.map": "/completeInItself/static/js/2.6346f83c.chunk.js.map",
     "index.html": "/completeInItself/index.html",
-    "precache-manifest.26d0400e793dd2185e074a56b1e7b889.js": "/completeInItself/precache-manifest.26d0400e793dd2185e074a56b1e7b889.js",
+    "precache-manifest.490fb4ba33ec74ea2e70da8abad0ddef.js": "/completeInItself/precache-manifest.490fb4ba33ec74ea2e70da8abad0ddef.js",
     "service-worker.js": "/completeInItself/service-worker.js",
-    "static/css/main.d725777a.chunk.css.map": "/completeInItself/static/css/main.d725777a.chunk.css.map",
-    "static/js/2.d7c8ff85.chunk.js.LICENSE.txt": "/completeInItself/static/js/2.d7c8ff85.chunk.js.LICENSE.txt",
+    "static/css/main.2b585cf0.chunk.css.map": "/completeInItself/static/css/main.2b585cf0.chunk.css.map",
+    "static/js/2.6346f83c.chunk.js.LICENSE.txt": "/completeInItself/static/js/2.6346f83c.chunk.js.LICENSE.txt",
     "static/media/1 riley.jpg": "/completeInItself/static/media/1 riley.1d7c2c9d.jpg",
     "static/media/10 angels egg.jpg": "/completeInItself/static/media/10 angels egg.28f822ad.jpg",
     "static/media/11 Abysmal education.jpg": "/completeInItself/static/media/11 Abysmal education.7d19b17d.jpg",
@@ -29,8 +29,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.cb65224f.js",
-    "static/js/2.d7c8ff85.chunk.js",
-    "static/css/main.d725777a.chunk.css",
-    "static/js/main.b10d2618.chunk.js"
+    "static/js/2.6346f83c.chunk.js",
+    "static/css/main.2b585cf0.chunk.css",
+    "static/js/main.7cc976b3.chunk.js"
   ]
 }
