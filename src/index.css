@@ -8,8 +8,7 @@ body {
   color:white; /* TODO: ask Irena about exact color */
   font-size: large;
 	font-weight: 500;
-	overflow-y: overlay;
-	overflow-x: hidden;
+	overflow: overlay;
 }
 
 #root {
