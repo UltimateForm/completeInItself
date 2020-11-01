@@ -2,7 +2,7 @@ import React from "react";
 import { isMobile } from "react-device-detect";
 
 
-//TODO: clean this lol
+// @TODO: clean this lol
 const styles: { [key: string]: React.CSSProperties } = {
 	info: {
 		display: "flex",
@@ -72,7 +72,7 @@ const styles: { [key: string]: React.CSSProperties } = {
 const irenamail = "isavic149@gmail.com";
 
 const comissions = [
-	{ name: "Editing/colouring your artwork", price: "$20" },
+	{ name: "Editing/colouring", price: "$20" },
 	{ name: "Portrait", price: "$30" },
 	{ name: "Character design", price: "$50" },
 	{ name: "Book cover illustration", price: "$80" },

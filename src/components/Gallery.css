@@ -1,0 +1,40 @@
+.overlay {
+	color: white;
+	position: absolute;
+	background-color: rgb(15, 32, 39);
+	background: radial-gradient(
+		ellipse at top right,
+		rgba(15, 32, 39, 0.5),
+		transparent 80%
+	);
+	padding: 1rem;
+	opacity: 0%;
+	transition: opacity 1s;
+}
+
+.imgContainer {
+	display: flex;
+	justify-content: end;
+	flex-direction: row-reverse;
+}
+
+.imgContainer:hover .overlay {
+	display: block;
+	opacity: 100%;
+	transition: opacity 1s;
+}
+
+.galleryContainer {
+	width: -webkit-fill-available;
+	width: -moz-fill-available;
+	display: inline-grid;
+	max-width: 50%;
+	justify-items: center;
+	padding: 1rem 5rem;
+}
+
+img {
+	max-width: 100%;
+	margin-bottom: 1rem;
+	max-height: 90vh;
+}

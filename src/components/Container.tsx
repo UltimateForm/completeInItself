@@ -5,7 +5,7 @@ import { isMobile } from "react-device-detect";
 
 const styles: { [key: string]: React.CSSProperties } = {
 	container: {
-		backgroundColor: "rgba(0,0,0,0.5)", //TODO: ask irena for correct transparency
+		backgroundColor: "rgba(0,0,0,0.5)", // @TODO: ask irena for correct transparency
 		minHeight: "100vh",
 		minWidth: "100vw",
 	},
