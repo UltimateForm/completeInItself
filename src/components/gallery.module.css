@@ -15,6 +15,7 @@
 .imgContainer {
 	display: flex;
 	justify-content: end;
+	width: 100%;
 	flex-direction: row-reverse;
 }
 
@@ -33,6 +34,13 @@
 	padding: 1rem 5rem;
 }
 
+@media (max-width: 768px){
+	.galleryContainer {
+
+		max-width: 100%;
+
+	}
+}
 img {
 	max-width: 100%;
 	margin-bottom: 1rem;

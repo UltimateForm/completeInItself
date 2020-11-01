@@ -86,9 +86,10 @@ export function ComissionInfo() {
 				dangerouslySetInnerHTML={{
 					__html: [
 						"li::before {",
-						'  content: "⯈";',
+						'  content: url("completeInItself/sort-right.png");',
 						"  position: absolute;",
 						"  left: -20px;",
+						"  color: white;",
 						"}",
 					].join("\n"),
 				}}
