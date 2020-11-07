@@ -87,7 +87,7 @@ export function ComissionInfo() {
 				dangerouslySetInnerHTML={{
 					__html: [
 						"li::before {",
-						'  content: url("completeInItself/sort-right.png");',
+						'  content: url("https://ultimateform.github.io/completeInItself/sort-right.png");', //idc anymore, github duplicating basepath for no reason so here it is, go f*ck yourself
 						"  position: absolute;",
 						"  left: -20px;",
 						"  color: white;",
