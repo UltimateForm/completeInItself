@@ -13,7 +13,7 @@ export function Gallery() {
 			{Object.entries(Artwork).map(([key, value]) => (
 				<div className={classes.imgContainer} key={key}>
 					<div className={classes.overlay}>{key.replace(/([A-Z])/g, ' $1').trim()}</div>
-					<img src={value} alt={key} />
+					<img src={value} alt={key}/>
 				</div>
 			))}
 			{isMobile && <ScrollArrow />}

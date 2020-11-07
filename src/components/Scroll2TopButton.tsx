@@ -23,8 +23,8 @@ const ScrollArrow = () => {
 			onClick={scrollTop}
 			style={{
 				position: "sticky",
-				width: "80px",
-				height: "40px",
+				width: "60px",
+				height: "30px",
 				color: "white",
 				backgroundColor: "rgba(7, 59, 76, 0.5)",
 				borderWidth: "thin thin 0 thin",

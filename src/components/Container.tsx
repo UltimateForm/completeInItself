@@ -2,8 +2,9 @@ import React from "react";
 import { ComissionInfo } from "./ComissionInfo";
 import { Gallery } from "./Gallery";
 import { isMobile } from "react-device-detect";
+import { makeStyles } from "@material-ui/styles";
 
-const styles: { [key: string]: React.CSSProperties } = {
+const useStyles = makeStyles({
 	container: {
 		backgroundColor: "rgba(0,0,0,0.5)", // @TODO: ask irena for correct transparency
 		minHeight: "100vh",
@@ -16,17 +17,13 @@ const styles: { [key: string]: React.CSSProperties } = {
 		width: "100%",
 		boxSizing: "border-box",
 	},
-	testCell: {
-		padding: 5,
-		backgroundImage: "url(../)",
-	},
-};
-
+})
 function clamp(num: number, min: number, max: number) {
 	return num <= min ? min : num >= max ? max : num;
 }
 
 export function Container() {
+	const classes = useStyles();
 	const [pageOffset, setPageOffset] = React.useState(0);
 	const listenToScroll = () => {
 		const winScroll =
@@ -40,8 +37,8 @@ export function Container() {
 	});
 
 	return (
-		<div style={styles.container}>
-			<div style={styles.grid}>
+		<div className={classes.container}>
+			<div className={classes.grid}>
 				{!isMobile && (
 					<>
 					<div

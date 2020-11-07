@@ -1,20 +1,19 @@
 import React from "react";
 import { isMobile } from "react-device-detect";
+import { makeStyles } from "@material-ui/styles";
 
-
-// @TODO: clean this lol
-const styles: { [key: string]: React.CSSProperties } = {
+const useStyles = makeStyles({
 	info: {
 		display: "flex",
 		flexDirection: "column",
 		textAlign: "start",
-		height: isMobile? "unset" : "100vh",
-		position: isMobile? "relative" : "sticky",
+		height: isMobile ? "unset" : "100vh",
+		position: isMobile ? "relative" : "sticky",
 		top: 5,
 		minWidth: "35%",
 		marginLeft: "1rem",
 		marginRight: "1rem",
-		marginBottom: isMobile? "1rem" : "unset"
+		marginBottom: isMobile ? "1rem" : "unset",
 	},
 	h1: {
 		fontWeight: 500,
@@ -67,7 +66,7 @@ const styles: { [key: string]: React.CSSProperties } = {
 		textTransform: "initial",
 		textAlign: "end",
 	},
-};
+});
 
 const irenamail = "isavic149@gmail.com";
 
@@ -79,14 +78,16 @@ const comissions = [
 	{ name: "Fantasy artwork", price: "$50-100*" },
 ];
 
+// @TODO: make this less dirty 
 export function ComissionInfo() {
+	const classes = useStyles();
 	return (
-		<div style={styles.info}>
+		<div className={classes.info}>
 			<style
 				dangerouslySetInnerHTML={{
 					__html: [
 						"li::before {",
-						'  content: url("completeInItself/sort-right.png");',
+						'  content: url("/sort-right.png");', // @note: doesn't work locally but will work on deploy
 						"  position: absolute;",
 						"  left: -20px;",
 						"  color: white;",
@@ -94,48 +95,47 @@ export function ComissionInfo() {
 					].join("\n"),
 				}}
 			></style>
-			<header style={styles.header}>
-				<h1 style={styles.h1}>Commissions are open!</h1>
+			<header className={classes.header}>
+				<h1 className={classes.h1}>Commissions are open!</h1>
 			</header>
-			<div style={styles.majorSection}>
-				<h2 style={styles.sectionHeader}>Pricings:</h2>
-				<ul style={styles.ul}>
+			<div className={classes.majorSection}>
+				<h2 className={classes.sectionHeader}>Pricings:</h2>
+				<ul className={classes.ul}>
 					{comissions.map((com) => (
-						<li style={styles.li} key={com.name+"#"+com.price}>
-							<div style={styles.divComissionLineContainer}>
+						<li className={classes.li} key={com.name + "#" + com.price}>
+							<div className={classes.divComissionLineContainer}>
 								<a
 									className="cancelhref"
 									href={`mailto:${irenamail}?subject=${com.name}`}
 								>
 									{com.name}
 								</a>
-								<div style={styles.dotted}></div>
+								<div className={classes.dotted}></div>
 								<div>{com.price}</div>
 							</div>
 						</li>
 					))}
 				</ul>
-				<span style={styles.note}>*Depending on complexity</span>
+				<span className={classes.note}>*Depending on complexity</span>
 			</div>
 			<span>If needed, PRINTING+SHIPING costs additional $10</span>
-			<div style={styles.minorSection}>
-				<h3 style={styles.sectionHeader}>How to order?</h3>
-				<ul style={styles.ul}>
-					<li style={styles.li}>
+			<div className={classes.minorSection}>
+				<h3 className={classes.sectionHeader}>How to order?</h3>
+				<ul className={classes.ul}>
+					<li className={classes.li}>
 						<a
 							href={`mailto:${irenamail}`}
-							className="cancelhref"
-							style={styles.li}
+							className={["cancelhref", classes.li].join(" ")}
 						>
 							Email: {irenamail}
 						</a>
 					</li>
 				</ul>
 			</div>
-			<div style={styles.minorSection}>
-				<h3 style={styles.sectionHeader}>Payment options:</h3>
-				<ul style={styles.ul}>
-					<li style={styles.li}>
+			<div className={classes.minorSection}>
+				<h3 className={classes.sectionHeader}>Payment options:</h3>
+				<ul className={classes.ul}>
+					<li className={classes.li}>
 						Paypal or Western Union (fulll amount upfront or two instalments)
 					</li>
 				</ul>
