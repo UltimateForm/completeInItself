@@ -32,6 +32,7 @@ export function Container() {
 	};
 
 	React.useEffect(() => {
+		window.scrollTo({ left: 0, behavior: "smooth" })
 		window.addEventListener("scroll", listenToScroll);
 		return () => window.removeEventListener("scroll", listenToScroll);
 	});

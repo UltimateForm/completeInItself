@@ -1,5 +1,5 @@
 body {
-	height: 100vh;
+	height: 100%;
 	width: 100vw;
 	margin: 0;
 	font-family: "Montserrat", sans-serif; /* TODO: ask Irena about exact font */
@@ -9,6 +9,9 @@ body {
 	font-size: large;
 	font-weight: 500;
 	overflow: overlay;
+	background-image: url(./images/background.jpg);
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 @media (max-width: 768px) {
