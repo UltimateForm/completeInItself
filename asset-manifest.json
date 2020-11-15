@@ -1,37 +1,24 @@
 {
   "files": {
     "main.css": "/completeInItself/static/css/main.60fd3bc4.chunk.css",
-    "main.js": "/completeInItself/static/js/main.fc0c6f00.chunk.js",
-    "main.js.map": "/completeInItself/static/js/main.fc0c6f00.chunk.js.map",
+    "main.js": "/completeInItself/static/js/main.c865a342.chunk.js",
+    "main.js.map": "/completeInItself/static/js/main.c865a342.chunk.js.map",
     "runtime-main.js": "/completeInItself/static/js/runtime-main.cb65224f.js",
     "runtime-main.js.map": "/completeInItself/static/js/runtime-main.cb65224f.js.map",
-    "static/js/2.1c50a20b.chunk.js": "/completeInItself/static/js/2.1c50a20b.chunk.js",
-    "static/js/2.1c50a20b.chunk.js.map": "/completeInItself/static/js/2.1c50a20b.chunk.js.map",
+    "static/js/2.5cb7ae7e.chunk.js": "/completeInItself/static/js/2.5cb7ae7e.chunk.js",
+    "static/js/2.5cb7ae7e.chunk.js.map": "/completeInItself/static/js/2.5cb7ae7e.chunk.js.map",
     "index.html": "/completeInItself/index.html",
-    "precache-manifest.2f63182ee9de771c6c49ef815d1fb5c2.js": "/completeInItself/precache-manifest.2f63182ee9de771c6c49ef815d1fb5c2.js",
+    "precache-manifest.9d6fca8de48825bf4a78aa8c2df10968.js": "/completeInItself/precache-manifest.9d6fca8de48825bf4a78aa8c2df10968.js",
     "service-worker.js": "/completeInItself/service-worker.js",
     "static/css/main.60fd3bc4.chunk.css.map": "/completeInItself/static/css/main.60fd3bc4.chunk.css.map",
-    "static/js/2.1c50a20b.chunk.js.LICENSE.txt": "/completeInItself/static/js/2.1c50a20b.chunk.js.LICENSE.txt",
-    "static/media/1 riley.jpg": "/completeInItself/static/media/1 riley.1d7c2c9d.jpg",
-    "static/media/10 angels egg.jpg": "/completeInItself/static/media/10 angels egg.28f822ad.jpg",
-    "static/media/11 Abysmal education.jpg": "/completeInItself/static/media/11 Abysmal education.7d19b17d.jpg",
-    "static/media/12 Excessive sweetness.jpg": "/completeInItself/static/media/12 Excessive sweetness.29ec471f.jpg",
-    "static/media/13 Goodnight smooch.jpg": "/completeInItself/static/media/13 Goodnight smooch.53dd861f.jpg",
-    "static/media/14 Money embezzlement.jpg": "/completeInItself/static/media/14 Money embezzlement.1dace5d6.jpg",
-    "static/media/2 flying whales.jpg": "/completeInItself/static/media/2 flying whales.1f428ac5.jpg",
-    "static/media/3 prosvijetljena.jpg": "/completeInItself/static/media/3 prosvijetljena.2d5ce25a.jpg",
-    "static/media/4 the discovery.jpg": "/completeInItself/static/media/4 the discovery.559d3194.jpg",
-    "static/media/6 portal.jpg": "/completeInItself/static/media/6 portal.ebcc6fa7.jpg",
-    "static/media/7 star.jpg": "/completeInItself/static/media/7 star.0754d4fc.jpg",
-    "static/media/8 ripples.jpg": "/completeInItself/static/media/8 ripples.5a0814f2.jpg",
-    "static/media/9 eye.jpg": "/completeInItself/static/media/9 eye.c51e9513.jpg",
+    "static/js/2.5cb7ae7e.chunk.js.LICENSE.txt": "/completeInItself/static/js/2.5cb7ae7e.chunk.js.LICENSE.txt",
     "static/media/index.css": "/completeInItself/static/media/background.f3684598.jpg",
     "static/media/App.css": "/completeInItself/static/media/composition-edited.e945f577.png"
   },
   "entrypoints": [
     "static/js/runtime-main.cb65224f.js",
-    "static/js/2.1c50a20b.chunk.js",
+    "static/js/2.5cb7ae7e.chunk.js",
     "static/css/main.60fd3bc4.chunk.css",
-    "static/js/main.fc0c6f00.chunk.js"
+    "static/js/main.c865a342.chunk.js"
   ]
 }
