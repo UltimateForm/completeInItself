@@ -1,8 +1,11 @@
 import React from "react";
 import { isMobile, engineName } from "react-device-detect";
-import * as Artwork from "../images/artwork";
 import ScrollArrow from "./Scroll2TopButton";
 import { makeStyles } from "@material-ui/styles";
+import { getAlbumImages, Image } from "../api";
+import Loader from "react-loader-spinner";
+
+const albumHash = "lCFbQsC";
 
 const useStyles = makeStyles({
 	overlay: {
@@ -14,6 +17,7 @@ const useStyles = makeStyles({
 		padding: "1rem 0 1.5rem 0",
 		opacity: "0%",
 		transition: "opacity 1s",
+		borderRadius:"inherit"
 	},
 	imgContainer: {
 		position: "relative",
@@ -26,6 +30,8 @@ const useStyles = makeStyles({
 			opacity: "100%",
 			transition: "opacity 1s",
 		},
+		borderRadius:"6px",
+		marginBottom: "1rem",
 	},
 	galleryContainer: {
 		width:
@@ -37,25 +43,58 @@ const useStyles = makeStyles({
 		justifyItems: "center",
 		padding: "1rem 5rem",
 	},
-	img: { maxWidth: "100%", marginBottom: "1rem", maxHeight: "90vh" },
+	img: { maxWidth: "100%",  maxHeight: "90vh", borderRadius:"inherit"},
 });
 
-export function Gallery() {
+export function Gallery(props: { images: Image[]; loading: boolean }) {
+	const { loading, images } = props;
 	const classes = useStyles(window.innerWidth);
 	return (
 		<div
 			style={{ padding: isMobile ? "1rem 1rem 0 1rem" : "1rem 5rem 1rem 5rem" }}
 			className={classes.galleryContainer}
 		>
-			{Object.entries(Artwork).map(([key, value]) => (
-				<div className={classes.imgContainer} key={key}>
-					<div className={classes.overlay} id="overlay">
-						{key.replace(/([A-Z])/g, " $1").trim()}
-					</div>
-					<img className={classes.img} src={value} alt={key} />
+			{loading ? (
+				<div style={{ alignSelf: "center" }}>
+					<Loader type="Rings" color="#EDE6DE" height={80} width={80} />
 				</div>
-			))}
+			) : (
+				<>
+					{images.map((i) => (
+						<div className={classes.imgContainer} key={i.id}>
+							{i.description && (
+								<div className={classes.overlay} id="overlay">
+									{i.description}
+								</div>
+							)}
+							<img className={classes.img} src={i.link} alt={i.description} />
+						</div>
+					))}
+				</>
+			)}
+
 			{isMobile && <ScrollArrow />}
 		</div>
 	);
+}
+
+export function GalleryContainer() {
+	const [images, setImages] = React.useState<Image[]>([]);
+	const [loading, setLoading] = React.useState<boolean>(true);
+	React.useEffect(() => {
+		(async function () {
+			try {
+				const albumImages = await getAlbumImages(albumHash);
+				setLoading(() => {
+					setImages(albumImages);
+					return false;
+				});
+			} catch (error) {
+				console.error(
+					`Failed to load images from imgur album (${albumHash}), error: ${error}`
+				);
+			}
+		})();
+	}, []);
+	return <Gallery images={images} loading={loading} />;
 }

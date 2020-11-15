@@ -1,6 +1,6 @@
 import React from "react";
 import { ComissionInfo } from "./ComissionInfo";
-import { Gallery } from "./Gallery";
+import { GalleryContainer } from "./Gallery";
 import { isMobile } from "react-device-detect";
 import { makeStyles } from "@material-ui/styles";
 
@@ -55,7 +55,7 @@ export function Container() {
 					</>
 				)}
 				<ComissionInfo />
-				<Gallery />
+				<GalleryContainer />
 			</div>
 		</div>
 	);
