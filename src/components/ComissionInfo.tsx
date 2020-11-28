@@ -118,7 +118,7 @@ export function ComissionInfo() {
 				</ul>
 				<span className={classes.note}>*Depending on complexity</span>
 			</div>
-			<span>If needed, PRINTING+SHIPING costs additional $10</span>
+			<span>If needed, PRINTING+SHIPPING costs additional $10</span>
 			<div className={classes.minorSection}>
 				<h3 className={classes.sectionHeader}>How to order?</h3>
 				<ul className={classes.ul}>
